@@ -3,7 +3,7 @@ const fs = require('fs');
 let data = [{id: "", name: ""}]
 fs.writeFileSync('data.json', JSON.stringify(data));
 const dbData = JSON.parse(fs.readFileSync('data.json', (err, data) => (data)))
-const TOKEN = process.env.TELEGRAM_TOKEN || '5662648503:AAGMtYem6FGCb-GFPANNwW71QFhhM0XU9Ds';
+const TOKEN = process.env.TELEGRAM_TOKEN || '';
 const TelegramBot = require('node-telegram-bot-api');
 const request = require('request');
 const options = {
